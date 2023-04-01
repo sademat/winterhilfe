@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('files', function (Blueprint $table) {
             $table->id();
-            $table->integer('forms_id');
+            $table->integer('forms_id')->nullable();
             $table->string('form_key');
             $table->string("name");            
             $table->timestamps();

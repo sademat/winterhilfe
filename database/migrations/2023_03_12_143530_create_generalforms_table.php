@@ -47,6 +47,8 @@ return new class extends Migration
             $table->text('desc_situation')->nullable();
             $table->string('needed_support')->nullable();
             $table->decimal('total_amount',$precision = 8, $scale = 2)->nullable();
+            $table->decimal('total_revenue',$precision = 8, $scale = 2)->nullable();
+            $table->decimal('total_expenditure',$precision = 8, $scale = 2)->nullable();
             $table->decimal('balance',$precision = 8, $scale = 2);
             $table->decimal('required_financial',$precision = 8, $scale = 2);
             $table->decimal('own_contribution',$precision = 8, $scale = 2);

@@ -14,3 +14,5 @@ use App\Http\Controllers\GformController;
 */
 
 Route::get('/', [GformController::class, 'index']);
+Route::post('/store', [GformController::class, 'store'])->name('form.store');
+Route::post('/fileupload', [GformController::class, 'uploadToServer'])->name('uploadToServer');
